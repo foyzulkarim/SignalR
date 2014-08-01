@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Simple Chat</title>    
+</head>
+<body>
+    <div class="container">
+        <button type="button" id="connect">Connect</button>
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion"></ul>
+    </div>
+    <!-- build:js scripts/signalr.min.js -->
+    <script src="Scripts/jquery-1.6.4.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.0.0.js"></script>
+    <!-- endbuild -->
+    
+    <script src="/signalr/hubs"></script>
+
+    <!-- build:js scripts/myscript.min.js -->
+    <script src="Scripts/myScript.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
